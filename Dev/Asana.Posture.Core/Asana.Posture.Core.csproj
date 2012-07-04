@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B90D418-BE11-4015-B99C-9EEFD74BD2B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Asana.Posture.Core</RootNamespace>
+    <AssemblyName>Asana.Posture.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0-rc\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.7\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.103.1\lib\net4\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Application.cs" />
+    <Compile Include="Data\AsanaErrors.cs" />
+    <Compile Include="Data\AsanaFollower.cs" />
+    <Compile Include="Data\AsanaNavigation.cs" />
+    <Compile Include="Data\AsanaProject.cs" />
+    <Compile Include="Data\AsanaResponse.cs" />
+    <Compile Include="Data\AsanaRespository.cs" />
+    <Compile Include="Data\AsanaTask.cs" />
+    <Compile Include="Data\AsanaUser.cs" />
+    <Compile Include="Data\AsanaWorkspace.cs" />
+    <Compile Include="Data\aspnet_Applications.cs" />
+    <Compile Include="Data\aspnet_Membership.cs" />
+    <Compile Include="Data\aspnet_Paths.cs" />
+    <Compile Include="Data\aspnet_PersonalizationAllUsers.cs" />
+    <Compile Include="Data\aspnet_PersonalizationPerUser.cs" />
+    <Compile Include="Data\aspnet_Profile.cs" />
+    <Compile Include="Data\aspnet_Roles.cs" />
+    <Compile Include="Data\aspnet_SchemaVersions.cs" />
+    <Compile Include="Data\aspnet_Users.cs" />
+    <Compile Include="Data\aspnet_WebEvent_Events.cs" />
+    <Compile Include="Data\DataClass.cs" />
+    <Compile Include="Data\Mapping\ApplicationMap.cs" />
+    <Compile Include="Data\Mapping\aspnet_ApplicationsMap.cs" />
+    <Compile Include="Data\Mapping\aspnet_MembershipMap.cs" />
+    <Compile Include="Data\Mapping\aspnet_PathsMap.cs" />
+    <Compile Include="Data\Mapping\aspnet_PersonalizationAllUsersMap.cs" />
+    <Compile Include="Data\Mapping\aspnet_PersonalizationPerUserMap.cs" />
+    <Compile Include="Data\Mapping\aspnet_ProfileMap.cs" />
+    <Compile Include="Data\Mapping\aspnet_RolesMap.cs" />
+    <Compile Include="Data\Mapping\aspnet_SchemaVersionsMap.cs" />
+    <Compile Include="Data\Mapping\aspnet_UsersMap.cs" />
+    <Compile Include="Data\Mapping\aspnet_WebEvent_EventsMap.cs" />
+    <Compile Include="Data\Mapping\MembershipMap.cs" />
+    <Compile Include="Data\Mapping\ProfileMap.cs" />
+    <Compile Include="Data\Mapping\RoleMap.cs" />
+    <Compile Include="Data\Mapping\UserMap.cs" />
+    <Compile Include="Data\Mapping\vw_aspnet_ApplicationsMap.cs" />
+    <Compile Include="Data\Mapping\vw_aspnet_MembershipUsersMap.cs" />
+    <Compile Include="Data\Mapping\vw_aspnet_ProfilesMap.cs" />
+    <Compile Include="Data\Mapping\vw_aspnet_RolesMap.cs" />
+    <Compile Include="Data\Mapping\vw_aspnet_UsersInRolesMap.cs" />
+    <Compile Include="Data\Mapping\vw_aspnet_UsersMap.cs" />
+    <Compile Include="Data\Mapping\vw_aspnet_WebPartState_PathsMap.cs" />
+    <Compile Include="Data\Mapping\vw_aspnet_WebPartState_SharedMap.cs" />
+    <Compile Include="Data\Mapping\vw_aspnet_WebPartState_UserMap.cs" />
+    <Compile Include="Data\Membership.cs" />
+    <Compile Include="Data\NsTasksContext.cs" />
+    <Compile Include="Data\Profile.cs" />
+    <Compile Include="Data\Role.cs" />
+    <Compile Include="Data\User.cs" />
+    <Compile Include="Data\vw_aspnet_Applications.cs" />
+    <Compile Include="Data\vw_aspnet_MembershipUsers.cs" />
+    <Compile Include="Data\vw_aspnet_Profiles.cs" />
+    <Compile Include="Data\vw_aspnet_Roles.cs" />
+    <Compile Include="Data\vw_aspnet_Users.cs" />
+    <Compile Include="Data\vw_aspnet_UsersInRoles.cs" />
+    <Compile Include="Data\vw_aspnet_WebPartState_Paths.cs" />
+    <Compile Include="Data\vw_aspnet_WebPartState_Shared.cs" />
+    <Compile Include="Data\vw_aspnet_WebPartState_User.cs" />
+    <Compile Include="Data\WorkplaceStat.cs" />
+    <Compile Include="Data\WorkspaceStats.cs" />
+    <Compile Include="DateTimeHelper.cs" />
+    <Compile Include="DateTimeHelperExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="CodeTemplates\ReverseEngineerCodeFirst\Context.tt" />
+    <None Include="CodeTemplates\ReverseEngineerCodeFirst\Entity.tt" />
+    <None Include="CodeTemplates\ReverseEngineerCodeFirst\Mapping.tt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

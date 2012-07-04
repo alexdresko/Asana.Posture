@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asana.Posture.Web.Ui1", "Asana.Posture.Web.Ui1\Asana.Posture.Web.Ui1.csproj", "{4F82AB7B-CBE4-4D6A-969E-948F48A175FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asana.Posture.Tests", "Asana.Posture.Tests\Asana.Posture.Tests.csproj", "{EA57E126-FBFA-41D2-97A0-068DC769603C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8E8538FB-ABB9-4F25-9B95-F52393B43D0E}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		NsTasks.vsmdi = NsTasks.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asana.Posture.Core", "Asana.Posture.Core\Asana.Posture.Core.csproj", "{7B90D418-BE11-4015-B99C-9EEFD74BD2B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{68027939-BCE7-440E-818F-77077025476F}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = NsTasks.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F82AB7B-CBE4-4D6A-969E-948F48A175FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F82AB7B-CBE4-4D6A-969E-948F48A175FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F82AB7B-CBE4-4D6A-969E-948F48A175FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F82AB7B-CBE4-4D6A-969E-948F48A175FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA57E126-FBFA-41D2-97A0-068DC769603C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA57E126-FBFA-41D2-97A0-068DC769603C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA57E126-FBFA-41D2-97A0-068DC769603C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA57E126-FBFA-41D2-97A0-068DC769603C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B90D418-BE11-4015-B99C-9EEFD74BD2B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B90D418-BE11-4015-B99C-9EEFD74BD2B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B90D418-BE11-4015-B99C-9EEFD74BD2B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B90D418-BE11-4015-B99C-9EEFD74BD2B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

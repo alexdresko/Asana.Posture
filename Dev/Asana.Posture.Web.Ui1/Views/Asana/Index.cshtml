@@ -1,0 +1,100 @@
+﻿@model dynamic
+@section Scripts
+{
+	<script type="text/javascript" src="~/Scripts/jsrender.js"></script>
+	<script type="text/javascript" src="~/Scripts/nsTasksAjax.js"></script>
+	<script type="text/javascript">
+		(function () {
+
+			$(function () {
+				$('button').addClass('btn');
+				var asanaDetails = $('#asanaDetails');
+
+
+				var loadWorkspace = function (id) {
+					$.nsAjax({
+						url: "/Asana/GetWorkspaceStats",
+						data: JSON.stringify({ 'id': id })
+					}).done(function (data) {
+						var results = $('#results');
+						results.empty();
+						results.kendoGrid({
+							dataSource: {
+								data: data.Stats
+							},
+							columns: [
+								{ field: "name" },
+								{ field: "created_at", type: 'date', template: '#= kendo.toString(created_at,"MM/dd/yyyy HH:MM:ss") #' },
+								{ field: "modified_at", type: 'date', template: '#= kendo.toString(modified_at,"MM/dd/yyyy HH:MM:ss") #' },
+								{ field: "TotalTasks" },
+								{ field: "TasksCompleted" },
+								{ field: "PastDueTasks" },
+								{ field: "PastDueDays" },
+								{ field: "TaskFollowers" },
+								{ field: "ProjectFollowers" },
+								{ field: "DueToday" },
+								{ field: "NotDueYet" },
+								{ field: "NeverDue" },
+								{ field: "OldestTask", type: 'date', template: '#= kendo.toString(OldestTask,"MM/dd/yyyy HH:MM:ss") #' },
+								{ field: "LastModified", type: 'date', template: '#= kendo.toString(LastModified,"MM/dd/yyyy HH:MM:ss") #' },
+								{ field: "NewestTask", type: 'date', template: '#= kendo.toString(NewestTask,"MM/dd/yyyy HH:MM:ss") #' }
+							],
+							filterable: true,
+							sortable: true,
+							selectable: true
+						});
+					});
+
+				};
+
+				var loadProject = function (id) {
+
+
+				};
+
+				var panelBar = $('#panelBar');
+
+				$.nsAjax({
+					url: "/Asana/GetAsanaNav"
+				}).done(function (data) {
+					panelBar.html($('#panelBarTemplate').render(data));
+					panelBar.kendoPanelBar({
+						expandMode: "single"
+					});
+					$('[data-asanaworkspace]').parent().click(function () {
+						var id = $(this).find('[data-asanaworkspace]').first().data('asanaworkspace');
+						loadWorkspace(id);
+					});
+					$('[data-asanaproject]').click(function () {
+						var id = $(this).data('asanaproject');
+						loadProject(id);
+					});
+					panelBar.find('[data-asanaworkspace]').first().click();
+				}).fail(function () {
+					alert('failed');
+				});
+			});
+		})();
+
+	</script>
+}
+<script id="panelBarTemplate" type="text/x-jsrender">
+	<li >
+		<span data-asanaworkspace='{{:Id}}'>{{:Name}}</span>
+		<ul>
+			{{for Projects}} 
+				<li data-asanaproject='{{:id}}'>{{:#data.name}}</li>
+			{{/for}}
+		</ul>
+	<li>
+</script>
+<div class="row-fluid">
+	<div class="well sidebar-nav">
+		<ul id="panelBar">
+		</ul>
+	</div>
+</div>
+<div class="row-fluid">
+	<div id="results">
+	</div>
+</div>
