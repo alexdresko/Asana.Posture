@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5EB56343-5B98-47F9-8E25-DF5AC21F3A3C}</ProjectGuid>
+    <ProjectGuid>{2F934315-9951-4283-ABB4-7816A855EE4B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NewMvc4ProjectReference.Tests</RootNamespace>
@@ -102,6 +102,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NewMvc4ProjectReference\NewMvc4ProjectReference.csproj">
+      <Project>{939CD6C6-9475-4638-B6DF-CAA91B41E4AC}</Project>
+      <Name>NewMvc4ProjectReference</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
