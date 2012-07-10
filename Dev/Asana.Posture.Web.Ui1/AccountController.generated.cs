@@ -138,15 +138,15 @@ namespace NsTasks.Web.Ui1.Controllers {
 
         public override System.Web.Mvc.JsonResult JsonLogin(NsTasks.Web.Ui1.Models.LoginModel model, string returnUrl) {
             var callInfo = new T4MVC_JsonResult(Area, Name, ActionNames.JsonLogin);
-            callInfo.RouteValueDictionary.Add("model", model);
-            callInfo.RouteValueDictionary.Add("returnUrl", returnUrl);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "returnUrl", returnUrl);
             return callInfo;
         }
 
         public override System.Web.Mvc.ActionResult Login(NsTasks.Web.Ui1.Models.LoginModel model, string returnUrl) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Login);
-            callInfo.RouteValueDictionary.Add("model", model);
-            callInfo.RouteValueDictionary.Add("returnUrl", returnUrl);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "returnUrl", returnUrl);
             return callInfo;
         }
 
@@ -162,13 +162,13 @@ namespace NsTasks.Web.Ui1.Controllers {
 
         public override System.Web.Mvc.ActionResult JsonRegister(NsTasks.Web.Ui1.Models.RegisterModel model) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.JsonRegister);
-            callInfo.RouteValueDictionary.Add("model", model);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
             return callInfo;
         }
 
         public override System.Web.Mvc.ActionResult Register(NsTasks.Web.Ui1.Models.RegisterModel model) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Register);
-            callInfo.RouteValueDictionary.Add("model", model);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
             return callInfo;
         }
 
@@ -179,7 +179,7 @@ namespace NsTasks.Web.Ui1.Controllers {
 
         public override System.Web.Mvc.ActionResult ChangePassword(NsTasks.Web.Ui1.Models.ChangePasswordModel model) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.ChangePassword);
-            callInfo.RouteValueDictionary.Add("model", model);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
             return callInfo;
         }
 
@@ -190,7 +190,7 @@ namespace NsTasks.Web.Ui1.Controllers {
 
         public override System.Web.Mvc.ActionResult Authenticate(string returnUrl) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Authenticate);
-            callInfo.RouteValueDictionary.Add("returnUrl", returnUrl);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "returnUrl", returnUrl);
             return callInfo;
         }
 

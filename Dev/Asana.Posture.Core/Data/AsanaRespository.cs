@@ -4,7 +4,7 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace NsTasks.Core.Data
+namespace Asana.Posture.Core.Data
 {
 	using System;
 	using System.Collections.Generic;

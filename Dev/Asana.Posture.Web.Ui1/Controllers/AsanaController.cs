@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace NsTasks.Web.Ui1.Controllers
 {
-	using NsTasks.Core.Data;
+	using Asana.Posture.Core.Data;
 
 	public partial class AsanaController : Controller
     {

@@ -1,0 +1,61 @@
+@image-folder: "http://cdn.kendostatic.com/2012.1.515/styles/Silver";
+@texture-url: url(http://cdn.kendostatic.com/2012.1.515/styles/textures/highlight.png);
+@widget-background-color: #eaeaec;
+@widget-border-color: #dbdbde;
+@widget-text-color: #515967;
+@header-background-color: #f3f3f4;
+@header-text-color: #515967;
+@button-background-color: #f3f3f4;
+@button-text-color: #515967;
+@group-background-color: #eaeaec;
+@group-border-color: #dbdbde;
+@content-background-color: #eaeaec;
+@select-background-color: #f3f3f4;
+@select-border-color: #a6afbe;
+@select-hover-background-color: #a6afbe;
+@select-group-background-color: #f3f3f4;
+@hover-background-color: #a6afbe;
+@hover-border-color: #a6afbe;
+@hover-text-color: #263248;
+@selected-background-color: #0879c0;
+@selected-border-color: #0879c0;
+@selected-text-color: #ffffff;
+@active-background-color: #ffffff;
+@active-border-color: #0879c0;
+@active-text-color: #515967;
+@error-background-color: #ffffff;
+@error-border-color: #ff0000;
+@error-text-color: #ff0000;
+@disabled-text-color: #a6afbe;
+@validation-background-color: #fff4c9;
+@validation-border-color: #ffe79e;
+@validation-text-color: #635145;
+@tooltip-background-color: #ffffff;
+@tooltip-border-color: #0879c0;
+@tooltip-text-color: #515967;
+@main-border-radius: 4px;
+@list-border-radius: @main-border-radius - 1;
+@inner-border-radius: @main-border-radius - 2;
+@slider-border-radius: 13px;
+@draghandle-border-radius: 7px;
+@alt-background-color: #f4f4f4;
+@input-background-color: #ffffff;
+@input-text-color: #515967;
+@shadow-color: rgba(0,0,0,0.296875);
+@shadow-inset-color: #8691a4;
+@link-text-color: #515967;
+@loading-panel-color: #ffffff;
+@splitbar-background-color: #f3f3f4;
+
+
+
+.box-shadow (@x: 0, @y: 0, @blur: 0, @opacity: 0) {
+  box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+}
+
+.border-radius(@a: 0) {
+	border-radius: @arguments;
+}
+@import "template.less";

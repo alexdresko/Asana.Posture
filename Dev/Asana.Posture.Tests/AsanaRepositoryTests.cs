@@ -7,9 +7,9 @@ namespace MoreAsana
 	using System.Linq;
 	using System.Net;
 
-	using Microsoft.VisualStudio.TestTools.UnitTesting;
+	using Asana.Posture.Core.Data;
 
-	using NsTasks.Core.Data;
+	using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 	/// <summary>
 	/// 	Summary description for AsanaRepositoryTests

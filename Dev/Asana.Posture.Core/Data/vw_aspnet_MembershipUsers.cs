@@ -1,4 +1,4 @@
-namespace NsTasks.Core.Data
+namespace Asana.Posture.Core.Data
 {
 	public class vw_aspnet_MembershipUsers
     {

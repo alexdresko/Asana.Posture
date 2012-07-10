@@ -1,9 +1,9 @@
-namespace NsTasks.Core.Data
+namespace Asana.Posture.Core.Data
 {
 	using System.Data.Entity;
 	using System.Diagnostics.CodeAnalysis;
 
-	using NsTasks.Core.Data.Mapping;
+	using Asana.Posture.Core.Data.Mapping;
 
 	public class NsTasksContext : DbContext
 	{

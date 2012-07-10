@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>@ViewBag.Title - Asana.Posture</title>
+	<link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width">
+	@Styles.Render("~/Content/themes/base/css", "~/Content/css", "~/Content/kenny")
+	@Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="#">Posture</a>
+				@Html.Partial("_LoginPartial")
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		@RenderBody()
+		<footer>
+			<p>
+				<a href="https://github.com/alexdresko/Asana.Posture" target="_blank">https://github.com/alexdresko/Asana.Posture</a></p>
+		</footer>
+	</div>
+	<!-- /container -->
+	@Scripts.Render("~/bundles/jquery", "~/bundles/bootstrap", "~/bundles/kendoui")
+	@RenderSection("scripts", required: false)
+</body>
+</html>

@@ -105,7 +105,7 @@ namespace NsTasks.Web.Ui1.Controllers {
 
         public override System.Web.Mvc.ActionResult GetWorkspaceStats(long id) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.GetWorkspaceStats);
-            callInfo.RouteValueDictionary.Add("id", id);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
             return callInfo;
         }
 

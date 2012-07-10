@@ -1,4 +1,4 @@
-namespace NsTasks.Core.Data
+namespace Asana.Posture.Core.Data
 {
 	using System.Collections.Generic;
 

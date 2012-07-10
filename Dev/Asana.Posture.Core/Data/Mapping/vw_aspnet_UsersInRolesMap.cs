@@ -1,4 +1,4 @@
-namespace NsTasks.Core.Data.Mapping
+namespace Asana.Posture.Core.Data.Mapping
 {
 	using System.Data.Entity.ModelConfiguration;
 
