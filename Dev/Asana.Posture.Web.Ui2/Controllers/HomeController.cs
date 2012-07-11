@@ -1,32 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-
-namespace Asana.Posture.Web.Ui2.Controllers
+﻿namespace Asana.Posture.Web.Ui2.Controllers
 {
+	using System;
+	using System.Web.Mvc;
+
+	[AllowAnonymous]
 	public partial class HomeController : Controller
 	{
 		public virtual ActionResult Index()
 		{
-			ViewBag.Message = "Modify this template to kick-start your ASP.NET MVC application.";
+			this.Response.AppendHeader(
+	"X-XRDS-Location",
+	new Uri(this.Request.Url, this.Response.ApplyAppPathModifier("~/Home/xrds")).AbsoluteUri);
 
-			return View();
+			if (this.Request.IsAuthenticated)
+			{
+				return RedirectToAction(MVC.Asana.Index());
+			}
+			
+			return this.View("Index");
 		}
 
-		public virtual ActionResult About()
+		public virtual ActionResult Xrds()
 		{
-			ViewBag.Message = "Your app description page.";
-
-			return View();
-		}
-
-		public virtual ActionResult Contact()
-		{
-			ViewBag.Message = "Your contact page.";
-
-			return View();
+			return this.View("Xrds");
 		}
 	}
 }

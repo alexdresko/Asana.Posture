@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewMvc4ProjectReference.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitializrBaseReference", "InitializrBaseReference\InitializrBaseReference.csproj", "{555878EE-4A4E-41BA-912C-E0690CB565C3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceProjects", "ReferenceProjects", "{BC0373BB-470A-4329-99A5-0E146226A572}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = NsTasks.vsmdi
@@ -73,5 +75,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F934315-9951-4283-ABB4-7816A855EE4B} = {BC0373BB-470A-4329-99A5-0E146226A572}
+		{555878EE-4A4E-41BA-912C-E0690CB565C3} = {BC0373BB-470A-4329-99A5-0E146226A572}
+		{939CD6C6-9475-4638-B6DF-CAA91B41E4AC} = {BC0373BB-470A-4329-99A5-0E146226A572}
 	EndGlobalSection
 EndGlobal

@@ -20,13 +20,13 @@ using System.Web.Mvc.Ajax;
 using System.Web.Mvc.Html;
 using System.Web.Routing;
 using T4MVC;
-namespace Asana.Posture.Web.Ui2.Controllers {
-    public partial class HomeController {
+namespace NsTasks.Web.Ui1.Controllers {
+    public partial class AsanaController {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public HomeController() { }
+        public AsanaController() { }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        protected HomeController(Dummy d) { }
+        protected AsanaController(Dummy d) { }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         protected RedirectToRouteResult RedirectToAction(ActionResult result) {
@@ -40,15 +40,20 @@ namespace Asana.Posture.Web.Ui2.Controllers {
             return RedirectToRoutePermanent(callInfo.RouteValueDictionary);
         }
 
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult GetWorkspaceStats() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.GetWorkspaceStats);
+        }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public HomeController Actions { get { return MVC.Home; } }
+        public AsanaController Actions { get { return MVC.Asana; } }
         [GeneratedCode("T4MVC", "2.0")]
         public readonly string Area = "";
         [GeneratedCode("T4MVC", "2.0")]
-        public readonly string Name = "Home";
+        public readonly string Name = "Asana";
         [GeneratedCode("T4MVC", "2.0")]
-        public const string NameConst = "Home";
+        public const string NameConst = "Asana";
 
         static readonly ActionNamesClass s_actions = new ActionNamesClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -56,37 +61,50 @@ namespace Asana.Posture.Web.Ui2.Controllers {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionNamesClass {
             public readonly string Index = "Index";
-            public readonly string Xrds = "Xrds";
+            public readonly string GetAsanaNav = "GetAsanaNav";
+            public readonly string GetWorkspaceStats = "GetWorkspaceStats";
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionNameConstants {
             public const string Index = "Index";
-            public const string Xrds = "Xrds";
+            public const string GetAsanaNav = "GetAsanaNav";
+            public const string GetWorkspaceStats = "GetWorkspaceStats";
         }
 
 
+        static readonly ActionParamsClass_GetWorkspaceStats s_params_GetWorkspaceStats = new ActionParamsClass_GetWorkspaceStats();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_GetWorkspaceStats GetWorkspaceStatsParams { get { return s_params_GetWorkspaceStats; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_GetWorkspaceStats {
+            public readonly string id = "id";
+        }
         static readonly ViewNames s_views = new ViewNames();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public ViewNames Views { get { return s_views; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ViewNames {
-            public readonly string Index = "~/Views/Home/Index.cshtml";
-            public readonly string Xrds = "~/Views/Home/Xrds.cshtml";
         }
     }
 
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-    public class T4MVC_HomeController: Asana.Posture.Web.Ui2.Controllers.HomeController {
-        public T4MVC_HomeController() : base(Dummy.Instance) { }
+    public class T4MVC_AsanaController: NsTasks.Web.Ui1.Controllers.AsanaController {
+        public T4MVC_AsanaController() : base(Dummy.Instance) { }
 
         public override System.Web.Mvc.ActionResult Index() {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Index);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Xrds() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Xrds);
+        public override System.Web.Mvc.ActionResult GetAsanaNav() {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.GetAsanaNav);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult GetWorkspaceStats(long id) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.GetWorkspaceStats);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
             return callInfo;
         }
 

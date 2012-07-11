@@ -20,13 +20,13 @@ using System.Web.Mvc.Ajax;
 using System.Web.Mvc.Html;
 using System.Web.Routing;
 using T4MVC;
-namespace Asana.Posture.Web.Ui2.Controllers {
-    public partial class HomeController {
+namespace NsTasks.Web.Ui1.Controllers {
+    public partial class ProfileController {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public HomeController() { }
+        public ProfileController() { }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        protected HomeController(Dummy d) { }
+        protected ProfileController(Dummy d) { }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         protected RedirectToRouteResult RedirectToAction(ActionResult result) {
@@ -42,13 +42,13 @@ namespace Asana.Posture.Web.Ui2.Controllers {
 
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public HomeController Actions { get { return MVC.Home; } }
+        public ProfileController Actions { get { return MVC.Profile; } }
         [GeneratedCode("T4MVC", "2.0")]
         public readonly string Area = "";
         [GeneratedCode("T4MVC", "2.0")]
-        public readonly string Name = "Home";
+        public readonly string Name = "Profile";
         [GeneratedCode("T4MVC", "2.0")]
-        public const string NameConst = "Home";
+        public const string NameConst = "Profile";
 
         static readonly ActionNamesClass s_actions = new ActionNamesClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -56,13 +56,11 @@ namespace Asana.Posture.Web.Ui2.Controllers {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionNamesClass {
             public readonly string Index = "Index";
-            public readonly string Xrds = "Xrds";
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionNameConstants {
             public const string Index = "Index";
-            public const string Xrds = "Xrds";
         }
 
 
@@ -71,22 +69,15 @@ namespace Asana.Posture.Web.Ui2.Controllers {
         public ViewNames Views { get { return s_views; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ViewNames {
-            public readonly string Index = "~/Views/Home/Index.cshtml";
-            public readonly string Xrds = "~/Views/Home/Xrds.cshtml";
         }
     }
 
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-    public class T4MVC_HomeController: Asana.Posture.Web.Ui2.Controllers.HomeController {
-        public T4MVC_HomeController() : base(Dummy.Instance) { }
+    public class T4MVC_ProfileController: NsTasks.Web.Ui1.Controllers.ProfileController {
+        public T4MVC_ProfileController() : base(Dummy.Instance) { }
 
         public override System.Web.Mvc.ActionResult Index() {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Index);
-            return callInfo;
-        }
-
-        public override System.Web.Mvc.ActionResult Xrds() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Xrds);
             return callInfo;
         }
 

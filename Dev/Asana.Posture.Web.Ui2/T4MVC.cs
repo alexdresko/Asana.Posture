@@ -24,7 +24,9 @@ using T4MVC;
 [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
 public static class MVC {
     public static Asana.Posture.Web.Ui2.Controllers.AccountController Account = new Asana.Posture.Web.Ui2.Controllers.T4MVC_AccountController();
+    public static NsTasks.Web.Ui1.Controllers.AsanaController Asana = new NsTasks.Web.Ui1.Controllers.T4MVC_AsanaController();
     public static Asana.Posture.Web.Ui2.Controllers.HomeController Home = new Asana.Posture.Web.Ui2.Controllers.T4MVC_HomeController();
+    public static NsTasks.Web.Ui1.Controllers.ProfileController Profile = new NsTasks.Web.Ui1.Controllers.T4MVC_ProfileController();
     public static T4MVC.SharedController Shared = new T4MVC.SharedController();
 }
 
@@ -319,6 +321,9 @@ namespace Links {
                 public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
                 public static readonly string alert_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/alert.min.js") ? Url("alert.min.js") : Url("alert.js");
                               
+                public static readonly string bootstrap_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/bootstrap.min.js") ? Url("bootstrap.min.js") : Url("bootstrap.js");
+                              
+                public static readonly string bootstrap_min_js = Url("bootstrap.min.js");
                 public static readonly string button_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/button.min.js") ? Url("button.min.js") : Url("button.js");
                               
                 public static readonly string carousel_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/carousel.min.js") ? Url("carousel.min.js") : Url("carousel.js");
@@ -329,6 +334,7 @@ namespace Links {
                               
                 public static readonly string modal_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/modal.min.js") ? Url("modal.min.js") : Url("modal.js");
                               
+                public static readonly string modernizr_2_5_3_respond_1_1_0_min_js = Url("modernizr-2.5.3-respond-1.1.0.min.js");
                 public static readonly string popover_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/popover.min.js") ? Url("popover.min.js") : Url("popover.js");
                               
                 public static readonly string scrollspy_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/scrollspy.min.js") ? Url("scrollspy.min.js") : Url("scrollspy.js");
@@ -728,7 +734,6 @@ namespace Links {
                 }
             
                 public static readonly string jquery_min_js = Url("jquery.min.js");
-                public static readonly string kendo_all_min_js = Url("kendo.all.min.js");
                 public static readonly string kendo_autocomplete_min_js = Url("kendo.autocomplete.min.js");
                 public static readonly string kendo_binder_min_js = Url("kendo.binder.min.js");
                 public static readonly string kendo_calendar_min_js = Url("kendo.calendar.min.js");
@@ -806,8 +811,178 @@ namespace Links {
         private const string URLPATH = "~/Content";
         public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
         public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class bootstrap {
+            private const string URLPATH = "~/Content/bootstrap";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+            public static readonly string accordion_less = Url("accordion.less");
+            public static readonly string alerts_less = Url("alerts.less");
+            public static readonly string bootstrap_less = Url("bootstrap.less");
+            public static readonly string breadcrumbs_less = Url("breadcrumbs.less");
+            public static readonly string button_groups_less = Url("button-groups.less");
+            public static readonly string buttons_less = Url("buttons.less");
+            public static readonly string carousel_less = Url("carousel.less");
+            public static readonly string close_less = Url("close.less");
+            public static readonly string code_less = Url("code.less");
+            public static readonly string component_animations_less = Url("component-animations.less");
+            public static readonly string dropdowns_less = Url("dropdowns.less");
+            public static readonly string forms_less = Url("forms.less");
+            public static readonly string grid_less = Url("grid.less");
+            public static readonly string hero_unit_less = Url("hero-unit.less");
+            public static readonly string labels_badges_less = Url("labels-badges.less");
+            public static readonly string layouts_less = Url("layouts.less");
+            public static readonly string mixins_less = Url("mixins.less");
+            public static readonly string modals_less = Url("modals.less");
+            public static readonly string navbar_less = Url("navbar.less");
+            public static readonly string navs_less = Url("navs.less");
+            public static readonly string pager_less = Url("pager.less");
+            public static readonly string pagination_less = Url("pagination.less");
+            public static readonly string popovers_less = Url("popovers.less");
+            public static readonly string progress_bars_less = Url("progress-bars.less");
+            public static readonly string reset_less = Url("reset.less");
+            public static readonly string responsive_1200px_min_less = Url("responsive-1200px-min.less");
+            public static readonly string responsive_767px_max_less = Url("responsive-767px-max.less");
+            public static readonly string responsive_768px_979px_less = Url("responsive-768px-979px.less");
+            public static readonly string responsive_navbar_less = Url("responsive-navbar.less");
+            public static readonly string responsive_utilities_less = Url("responsive-utilities.less");
+            public static readonly string responsive_less = Url("responsive.less");
+            public static readonly string scaffolding_less = Url("scaffolding.less");
+            public static readonly string sprites_less = Url("sprites.less");
+            public static readonly string tables_less = Url("tables.less");
+            public static readonly string thumbnails_less = Url("thumbnails.less");
+            public static readonly string tooltip_less = Url("tooltip.less");
+            public static readonly string type_less = Url("type.less");
+            public static readonly string utilities_less = Url("utilities.less");
+            public static readonly string variables_less = Url("variables.less");
+            public static readonly string wells_less = Url("wells.less");
+        }
+    
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class Images {
+            private const string URLPATH = "~/Content/Images";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+            public static readonly string glyphicons_halflings_white_png = Url("glyphicons-halflings-white.png");
+            public static readonly string glyphicons_halflings_png = Url("glyphicons-halflings.png");
+        }
+    
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class kendoui {
+            private const string URLPATH = "~/Content/kendoui";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+            [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+            public static class Black {
+                private const string URLPATH = "~/Content/kendoui/Black";
+                public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+                public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+                public static readonly string editor_png = Url("editor.png");
+                public static readonly string imagebrowser_png = Url("imagebrowser.png");
+                public static readonly string loading_image_gif = Url("loading-image.gif");
+                public static readonly string loading_gif = Url("loading.gif");
+                public static readonly string slider_h_gif = Url("slider-h.gif");
+                public static readonly string slider_v_gif = Url("slider-v.gif");
+                public static readonly string sprite_png = Url("sprite.png");
+            }
+        
+            [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+            public static class BlueOpal {
+                private const string URLPATH = "~/Content/kendoui/BlueOpal";
+                public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+                public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+                public static readonly string editor_png = Url("editor.png");
+                public static readonly string imagebrowser_png = Url("imagebrowser.png");
+                public static readonly string loading_image_gif = Url("loading-image.gif");
+                public static readonly string loading_gif = Url("loading.gif");
+                public static readonly string slider_h_gif = Url("slider-h.gif");
+                public static readonly string slider_v_gif = Url("slider-v.gif");
+                public static readonly string sprite_png = Url("sprite.png");
+            }
+        
+            [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+            public static class Default {
+                private const string URLPATH = "~/Content/kendoui/Default";
+                public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+                public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+                public static readonly string editor_png = Url("editor.png");
+                public static readonly string imagebrowser_png = Url("imagebrowser.png");
+                public static readonly string loading_image_gif = Url("loading-image.gif");
+                public static readonly string loading_gif = Url("loading.gif");
+                public static readonly string slider_h_gif = Url("slider-h.gif");
+                public static readonly string slider_v_gif = Url("slider-v.gif");
+                public static readonly string sprite_png = Url("sprite.png");
+            }
+        
+            [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+            public static class images {
+                private const string URLPATH = "~/Content/kendoui/images";
+                public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+                public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+                public static readonly string android_sprite_png = Url("android-sprite.png");
+                public static readonly string iconmasks_svg = Url("iconmasks.svg");
+                public static readonly string ios_sprite_png = Url("ios-sprite.png");
+            }
+        
+            public static readonly string kendo_black_min_css = Url("kendo.black.min.css");
+            public static readonly string kendo_blueopal_min_css = Url("kendo.blueopal.min.css");
+            public static readonly string kendo_common_min_css = Url("kendo.common.min.css");
+            public static readonly string kendo_dataviz_min_css = Url("kendo.dataviz.min.css");
+            public static readonly string kendo_default_min_css = Url("kendo.default.min.css");
+            public static readonly string kendo_metro_min_css = Url("kendo.metro.min.css");
+            public static readonly string kendo_mobile_all_min_css = Url("kendo.mobile.all.min.css");
+            public static readonly string kendo_mobile_android2_min_css = Url("kendo.mobile.android2.min.css");
+            public static readonly string kendo_mobile_android4_min_css = Url("kendo.mobile.android4.min.css");
+            public static readonly string kendo_mobile_blackberry_min_css = Url("kendo.mobile.blackberry.min.css");
+            public static readonly string kendo_mobile_ios_min_css = Url("kendo.mobile.ios.min.css");
+            public static readonly string kendo_mobile_meego_min_css = Url("kendo.mobile.meego.min.css");
+            public static readonly string kendo_silver_min_css = Url("kendo.silver.min.css");
+            [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+            public static class Metro {
+                private const string URLPATH = "~/Content/kendoui/Metro";
+                public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+                public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+                public static readonly string editor_png = Url("editor.png");
+                public static readonly string imagebrowser_png = Url("imagebrowser.png");
+                public static readonly string loading_image_gif = Url("loading-image.gif");
+                public static readonly string loading_gif = Url("loading.gif");
+                public static readonly string slider_h_gif = Url("slider-h.gif");
+                public static readonly string slider_v_gif = Url("slider-v.gif");
+                public static readonly string sprite_png = Url("sprite.png");
+            }
+        
+            public static readonly string posture_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/posture.min.css") ? Url("posture.min.css") : Url("posture.css");
+                 
+            public static readonly string posture_less = Url("posture.less");
+            [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+            public static class Silver {
+                private const string URLPATH = "~/Content/kendoui/Silver";
+                public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+                public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+                public static readonly string editor_png = Url("editor.png");
+                public static readonly string imagebrowser_png = Url("imagebrowser.png");
+                public static readonly string loading_image_gif = Url("loading-image.gif");
+                public static readonly string loading_gif = Url("loading.gif");
+                public static readonly string slider_h_gif = Url("slider-h.gif");
+                public static readonly string slider_v_gif = Url("slider-v.gif");
+                public static readonly string sprite_png = Url("sprite.png");
+            }
+        
+            public static readonly string template_less = Url("template.less");
+            [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+            public static class textures {
+                private const string URLPATH = "~/Content/kendoui/textures";
+                public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+                public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+                public static readonly string glass_png = Url("glass.png");
+                public static readonly string highlight_png = Url("highlight.png");
+            }
+        
+        }
+    
         public static readonly string Site_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Site.min.css") ? Url("Site.min.css") : Url("Site.css");
              
+        public static readonly string style_less = Url("style.less");
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public static class themes {
             private const string URLPATH = "~/Content/themes";

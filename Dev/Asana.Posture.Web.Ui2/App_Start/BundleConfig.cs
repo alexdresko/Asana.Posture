@@ -6,9 +6,6 @@
 	{
 		public static void RegisterBundles(BundleCollection bundles)
 		{
-			bundles.EnableDefaultBundles();
-			BundleTable.EnableOptimizations = true;
-
 			bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
 						"~/Scripts/libs/jquery-1.*"));
 
