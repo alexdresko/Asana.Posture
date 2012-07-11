@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Web.Mvc;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Asana.Posture.Web.Ui2;
 using Asana.Posture.Web.Ui2.Controllers;
 
 namespace Asana.Posture.Web.Ui2.Tests.Controllers
 {
+	using System.Web.Mvc;
+
 	[TestClass]
 	public class HomeControllerTest
 	{

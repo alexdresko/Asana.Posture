@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
-using System.Web.Mvc;
 using System.Web.Security;
 
 namespace Asana.Posture.Web.Ui2.Models
 {
+	using System.Web.Mvc;
 
 	public class ChangePasswordModel
 	{

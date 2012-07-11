@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Web.Mvc;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NewMvc4ProjectReference;
 using NewMvc4ProjectReference.Controllers;
 
 namespace NewMvc4ProjectReference.Tests.Controllers
 {
+	using System.Web.Mvc;
+
 	[TestClass]
 	public class HomeControllerTest
 	{

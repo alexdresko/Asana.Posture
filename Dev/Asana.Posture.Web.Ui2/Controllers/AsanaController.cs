@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-
-namespace NsTasks.Web.Ui1.Controllers
+﻿namespace Asana.Posture.Web.Ui2.Controllers
 {
+	using System.Web.Mvc;
+
 	using Asana.Posture.Core.Data;
 
 	public partial class AsanaController : Controller
@@ -15,19 +11,19 @@ namespace NsTasks.Web.Ui1.Controllers
 
 		public virtual ActionResult Index()
         {
-            return View();
+            return this.View();
         }
 
 		public virtual ActionResult GetAsanaNav()
 		{
 			var repository = new AsanaRespository();
-			return Json(repository.GetAsanaNav(), JsonRequestBehavior.AllowGet);
+			return this.Json(repository.GetAsanaNav(), JsonRequestBehavior.AllowGet);
 		}
 
 		public virtual ActionResult GetWorkspaceStats(long id)
 		{
 			var repository = new AsanaRespository();
-			return Json(repository.GetWorkspaceStats(id), JsonRequestBehavior.AllowGet);
+			return this.Json(repository.GetWorkspaceStats(id), JsonRequestBehavior.AllowGet);
 		}
     }
 }

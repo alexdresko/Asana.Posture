@@ -20,7 +20,7 @@ using System.Web.Mvc.Ajax;
 using System.Web.Mvc.Html;
 using System.Web.Routing;
 using T4MVC;
-namespace NsTasks.Web.Ui1.Controllers {
+namespace Asana.Posture.Web.Ui2.Controllers {
     public partial class AsanaController {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public AsanaController() { }
@@ -89,7 +89,7 @@ namespace NsTasks.Web.Ui1.Controllers {
     }
 
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-    public class T4MVC_AsanaController: NsTasks.Web.Ui1.Controllers.AsanaController {
+    public class T4MVC_AsanaController: Asana.Posture.Web.Ui2.Controllers.AsanaController {
         public T4MVC_AsanaController() : base(Dummy.Instance) { }
 
         public override System.Web.Mvc.ActionResult Index() {

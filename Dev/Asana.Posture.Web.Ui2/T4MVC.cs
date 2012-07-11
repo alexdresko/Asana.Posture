@@ -24,9 +24,9 @@ using T4MVC;
 [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
 public static class MVC {
     public static Asana.Posture.Web.Ui2.Controllers.AccountController Account = new Asana.Posture.Web.Ui2.Controllers.T4MVC_AccountController();
-    public static NsTasks.Web.Ui1.Controllers.AsanaController Asana = new NsTasks.Web.Ui1.Controllers.T4MVC_AsanaController();
+    public static Asana.Posture.Web.Ui2.Controllers.AsanaController Asana = new Asana.Posture.Web.Ui2.Controllers.T4MVC_AsanaController();
     public static Asana.Posture.Web.Ui2.Controllers.HomeController Home = new Asana.Posture.Web.Ui2.Controllers.T4MVC_HomeController();
-    public static NsTasks.Web.Ui1.Controllers.ProfileController Profile = new NsTasks.Web.Ui1.Controllers.T4MVC_ProfileController();
+    public static Asana.Posture.Web.Ui2.Controllers.ProfileController Profile = new Asana.Posture.Web.Ui2.Controllers.T4MVC_ProfileController();
     public static T4MVC.SharedController Shared = new T4MVC.SharedController();
 }
 

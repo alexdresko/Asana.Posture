@@ -20,7 +20,7 @@ using System.Web.Mvc.Ajax;
 using System.Web.Mvc.Html;
 using System.Web.Routing;
 using T4MVC;
-namespace NsTasks.Web.Ui1.Controllers {
+namespace Asana.Posture.Web.Ui2.Controllers {
     public partial class ProfileController {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public ProfileController() { }
@@ -73,7 +73,7 @@ namespace NsTasks.Web.Ui1.Controllers {
     }
 
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-    public class T4MVC_ProfileController: NsTasks.Web.Ui1.Controllers.ProfileController {
+    public class T4MVC_ProfileController: Asana.Posture.Web.Ui2.Controllers.ProfileController {
         public T4MVC_ProfileController() : base(Dummy.Instance) { }
 
         public override System.Web.Mvc.ActionResult Index() {
