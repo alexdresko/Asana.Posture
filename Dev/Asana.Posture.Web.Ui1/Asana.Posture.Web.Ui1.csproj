@@ -103,6 +103,9 @@
     <Reference Include="Elmah">
       <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
     </Reference>
+    <Reference Include="Elmah.Contrib.Mvc">
+      <HintPath>..\packages\Elmah.Contrib.Mvc.1.0\lib\net40\Elmah.Contrib.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.5.0.0-rc\lib\net40\EntityFramework.dll</HintPath>
@@ -110,6 +113,12 @@
     <Reference Include="Glimpse.Core, Version=0.87.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Glimpse.0.87\lib\net40\Glimpse.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Glimpse.Ef">
+      <HintPath>..\packages\Glimpse.Ef.0.87\lib\net40\Glimpse.Ef.dll</HintPath>
+    </Reference>
+    <Reference Include="Glimpse.Elmah">
+      <HintPath>..\packages\Glimpse.Elmah.0.9.7\lib\net40\Glimpse.Elmah.dll</HintPath>
     </Reference>
     <Reference Include="Glimpse.Mvc3, Version=0.87.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -253,6 +262,8 @@
     <Content Include="apple-touch-icon.png" />
     <Content Include="App_Readme\DCCreative.DNOA4Glimpse.Readme.txt" />
     <Content Include="App_Readme\Elmah.txt" />
+    <Content Include="App_Readme\glimpse.ef.readme.txt" />
+    <Content Include="App_Readme\glimpse.elmah.readme.txt" />
     <Content Include="App_Readme\glimpse.mvc3.readme.txt" />
     <Content Include="App_Readme\glimpse.readme.txt" />
     <Content Include="Content\kendoui\Black\editor.png" />
